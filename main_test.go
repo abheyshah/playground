@@ -2,6 +2,7 @@ package main
 
 import (
 	"testing"
+	"fmt"
 )
 
 // GORM_REPO: https://github.com/go-gorm/gorm.git
@@ -10,7 +11,7 @@ import (
 
 func TestGORM(t *testing.T) {
 	user := User{Name: "jinzhu"}
-
+	fmt.Println("Hello")
 	DB.Create(&user)
 
 	var result User
